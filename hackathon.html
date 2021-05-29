@@ -6,9 +6,17 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Avid thinkers</title>
     <style>
+      .navbar{
+        z-index:initial;
+      }
       .mb-3{
+        width: 25vw;
+        margin: auto;
+        height: 50vh;
+      }
+      #two{
         width: 25vw;
         margin: auto;
         height: 50vh;
@@ -21,19 +29,18 @@
       .sub{
         text-align: left;
       }
-      #mobile{
-        border-width: thin;
-      }
-      body
-      {
-        background: url(image.jpg);
+      body {
+        font-size: xx-large;
+        background-image: url("2_image.png");
+        background-repeat: no-repeat;
+        background-size:cover;
       }
     </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Avid thinkers</a>
+        <a class="navbar-brand" href="#"><h1>Avid thinkers</h1></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -42,37 +49,30 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div style="height: 15vh;">
+    <div style="height: 18vh;">
     </div>
     <div class="mb-3">
       <div class="mb-30">
         <label for="exampleFormControlInput1" class="form-label">Name</label>
         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter your name">
-        <br>
-        <label for="exampleFormControlInput1" id="mobile" style="padding: 5px;">Mobile number</label><br>
-        <input type="number" placeholder="Mobile number">
+        <hr>
+        <label for="exampleFormControlInput1" id="mobile" class="form-label">Mobile number</label>
+        <input type="String" placeholder="Mobile number" class="form-control">
       </div>
     <div class="mb-3.1" id="1">
-      <br>
+      <hr>
       <label for="exampleFormControlInput1" class="form-label">Email address</label>
       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
-    <div class="mb-3.2">
-      <br>
-      <label for="exampleFormControlTextarea1" class="form-label" \>Address</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your address"></textarea>
+      <hr>
     </div>
     <div class="sub">
-      <br>
-      <button><a href="2.html"><b>Submit</b> </a></button>
+      <button><a href="2.html"><b>Submit</b></a></button>
     </div>
   </div>
-  
+  <p id="two"></p>
+  </body>
 </html>
